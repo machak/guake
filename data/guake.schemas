@@ -27,6 +27,17 @@
                 executed in a login shell.</long>
             </locale>
         </schema>
+        <schema>
+            <key>/schemas/apps/guake/general/open_tab_cwd</key>
+            <applyto>/apps/guake/general/open_tab_cwd</applyto>
+            <owner>guake</owner>
+            <type>bool</type>
+            <default>false</default>
+            <locale name="C">
+                <short>Open tab</short>
+                <long>If true, terminal will open in current directory.</long>
+            </locale>
+        </schema>
 
 	<schema>
             <key>/schemas/apps/guake/general/use_trayicon</key>

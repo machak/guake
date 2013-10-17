@@ -1219,6 +1219,8 @@ class Guake(SimpleGladeApp):
         if isinstance(directory, basestring):
             default_params['directory'] = directory
 
+        # always use home:
+        default_params['directory'] = os.path.expanduser("~")
         final_params = self.get_fork_params(default_params)
         pid = box.terminal.fork_command(**final_params)
         self.pid_list.append(pid)
